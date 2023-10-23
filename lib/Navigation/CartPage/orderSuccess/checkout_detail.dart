@@ -22,10 +22,7 @@ class _CheckoutDetailState extends State<CheckoutDetail> {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => CheckOut()), //Link with checkout
-              // );
+              Navigator.pop(context);
             },
             icon: Icon(
               Icons.arrow_back_ios_new,

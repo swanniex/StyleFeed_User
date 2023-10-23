@@ -102,9 +102,9 @@ class _ProfileState extends State<ProfileScreen> {
 
                 Container(
                   height: 120,
-                  width: 400,
+                  width: 1000,
                   color: Color.fromRGBO(247, 246, 213, 0.25),
-                  padding: EdgeInsets.fromLTRB(2, 10, 0, 10),
+                  padding: EdgeInsets.fromLTRB(1, 1, 1, 1),
                   child: Column(
                     children: [
                       Text(
@@ -127,7 +127,7 @@ class _ProfileState extends State<ProfileScreen> {
                                 Icon(
                                   Icons.credit_card,
                                   color: Colors.grey[700],
-                                  size: 27,
+                                  size: 20,
                                 ),
 
                                 SizedBox(height: 8),
@@ -136,7 +136,7 @@ class _ProfileState extends State<ProfileScreen> {
                                   'Unpaid',
                                   style: GoogleFonts.montserrat(
                                     color: Colors.black,
-                                    fontSize: 11,
+                                    fontSize: 8,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
@@ -157,7 +157,7 @@ class _ProfileState extends State<ProfileScreen> {
                                 Icon(
                                   Icons.work_history_outlined,
                                   color: Colors.grey[700],
-                                  size: 27,
+                                  size: 20,
                                 ),
 
                                 SizedBox(height: 8),
@@ -166,7 +166,7 @@ class _ProfileState extends State<ProfileScreen> {
                                   'Processing',
                                   style: GoogleFonts.montserrat(
                                     color: Colors.black,
-                                    fontSize: 11,
+                                    fontSize: 8,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
@@ -187,7 +187,7 @@ class _ProfileState extends State<ProfileScreen> {
                                 Icon(
                                   Icons.local_shipping_outlined,
                                   color: Colors.grey[700],
-                                  size: 27,
+                                  size: 20,
                                 ),
 
                                 SizedBox(height: 8),
@@ -196,7 +196,7 @@ class _ProfileState extends State<ProfileScreen> {
                                   'Shipped',
                                   style: GoogleFonts.montserrat(
                                     color: Colors.black,
-                                    fontSize: 11,
+                                    fontSize: 8,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
@@ -217,7 +217,7 @@ class _ProfileState extends State<ProfileScreen> {
                                 Icon(
                                   Icons.rate_review_outlined,
                                   color: Colors.grey[700],
-                                  size: 27,
+                                  size: 20,
                                 ),
 
                                 SizedBox(height: 8),
@@ -226,7 +226,7 @@ class _ProfileState extends State<ProfileScreen> {
                                   'Review',
                                   style: GoogleFonts.montserrat(
                                     color: Colors.black,
-                                    fontSize: 11,
+                                    fontSize: 8,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
@@ -247,7 +247,7 @@ class _ProfileState extends State<ProfileScreen> {
                                 Icon(
                                   Icons.assignment_return_outlined,
                                   color: Colors.grey[700],
-                                  size: 27,
+                                  size: 20,
                                 ),
 
                                 SizedBox(height: 8),
@@ -281,6 +281,10 @@ class _ProfileState extends State<ProfileScreen> {
 
 
                 //List
+                ListInPFWidget(title: 'Point System', icon: Icons.favorite, onPress:(){
+                  Navigator.pushNamed(context, '/pointSystem');
+                },),
+                SizedBox(height: 13),
                 ListInPFWidget(title: 'My WishList', icon: Icons.favorite, onPress:(){},),
                 SizedBox(height: 13),
                 ListInPFWidget(title: 'Voucher & Offers', icon: Icons.discount, onPress:(){},),

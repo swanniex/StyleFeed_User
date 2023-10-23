@@ -20,8 +20,8 @@ class _ItemWidgetState extends State<ItemWidget> {
       children: [
         for(int i=0; i<products.length; i++)
         Container(
-          padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-          margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: EdgeInsets.only(left: 15, right: 7, top: 10),
+          margin: EdgeInsets.symmetric(vertical: 1, horizontal: 8),
           decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
@@ -40,7 +40,7 @@ class _ItemWidgetState extends State<ItemWidget> {
                   child: Text(
                     "-50%",
                   style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 10,
                     color: Color(0xFFEDECF2),
                     fontWeight: FontWeight.bold
                   ),
@@ -56,7 +56,7 @@ class _ItemWidgetState extends State<ItemWidget> {
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailScreen(products[i])));
                 },
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: EdgeInsets.all(1),
                   child: Image.asset(products[i].image,
                   width: 120,
                   height: 120,
@@ -69,7 +69,7 @@ class _ItemWidgetState extends State<ItemWidget> {
                 alignment: Alignment.centerLeft,
                 child: Text(products[i].title,
                   style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 12,
                   color: Colors.black, 
                   fontWeight: FontWeight.bold,
                 ),),
@@ -78,10 +78,10 @@ class _ItemWidgetState extends State<ItemWidget> {
                 alignment: Alignment.centerLeft,
                 child: Text(products[i].description,
                 style: TextStyle(
-                  fontSize: 12, color: Colors.black
+                  fontSize: 10, color: Colors.black
                 )),
               ),
-              Padding(padding: EdgeInsets.symmetric(vertical: 10),
+              Padding(padding: EdgeInsets.symmetric(vertical: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

@@ -12,6 +12,7 @@ class Myhome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: null,
         title: Text("STYLE FEED", style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold, color: Colors.black,)),
         actions: [
           IconButton(
@@ -50,7 +51,7 @@ class Myhome extends StatelessWidget {
             child: Row(children: [
               Container(
                 margin: EdgeInsets.only(left: 5),
-                width: 250,
+                width: 200,
                 child: TextFormField(
                   decoration: InputDecoration(
                     border: InputBorder.none,

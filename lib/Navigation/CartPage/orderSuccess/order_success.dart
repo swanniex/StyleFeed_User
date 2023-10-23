@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:clay_containers/clay_containers.dart';
+import 'package:style_feed/Navigation/HomePage/home.dart';
 
 
 
@@ -551,10 +552,7 @@ class _OrderSuccessScreenState extends State<OrderSuccessScreen> {
           padding: EdgeInsets.all(20),
           child: ElevatedButton(
             onPressed: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => HomePage()), //route to user homepage
-              // );
+              Navigator.of(context).popUntil((route) => route.isFirst);
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.deepPurple[200],
