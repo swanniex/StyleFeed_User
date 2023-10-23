@@ -18,7 +18,7 @@ class User {
 
 class ChatHome extends StatelessWidget {
   final List<Message> messages = [
-    Message("Yes, It is still available", "High Cultured"),
+    Message("Yes, still instock", "High Cultured"),
     Message("There would be two colors for that shirt, sir", "Yangoods")
     // Message("Br mote srr yin kg ma ll", "Ma Nan"),
     // Message("Laptop gyi lag ny p", "Swam Htet"),
@@ -28,8 +28,8 @@ class ChatHome extends StatelessWidget {
   ];
 
   final List<User> users = [
-    User("High Cultured", "assets/pfp/winter.jpg"),
-    User("Yangoods", "assets/pfp/winter.jpg")
+    User("High Cultured", "assets/pfp/highculturedlogo.png"),
+    User("Yangoods", "assets/pfp/yangoods.png")
     // User("Ma Nan", "assets/pfp/winter.jpg"),
     // User("Swam Htet", "assets/pfp/winter.jpg"),
     // User("Swan Htet Naing", "assets/pfp/winter.jpg"),
